@@ -1,0 +1,1 @@
+proc goodproc {a b} {  if {$a == 0} {    return 0  }  return [expr {$b / $a}]}puts [goodproc 0 10]proc goodproc2 {a b} {  if {$a == 0} {    return "Division by zero"  }  return [expr {$b / $a}]}puts [goodproc2 0 10]proc goodproc3 {a b} {  if {$a == 0} {     return {error: Division by zero}  }  return [expr {$b / $a}]}puts [goodproc3 0 10]
